@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="AnchorPanel2" prefHeight="380.0" prefWidth="822.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="model.TropFenetreControleur">
+   <children>
+      <Label layoutX="7.0" layoutY="14.0" prefHeight="137.0" prefWidth="794.0" text="VOUS AVEZ DEJA OUVERT LE MAXIMUN DE FEUILLE ">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="BoutonClose" layoutX="176.0" layoutY="141.0" mnemonicParsing="false" prefHeight="174.0" prefWidth="470.0" text="FERMER" onAction="#Close">
+         <font>
+            <Font size="79.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

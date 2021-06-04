@@ -1,0 +1,78 @@
+\doxysection{img\+Proc.\+img\+Proc Class Reference}
+\label{classimg_proc_1_1img_proc}\index{imgProc.imgProc@{imgProc.imgProc}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Mat \textbf{ get\+BW} (Mat mat, double hue\+Start, double hue\+Stop, double saturation\+Start, double saturation\+Stop, double value\+Start, double value\+Stop)
+\item 
+Mat \textbf{ pre\+Proc} (Mat mat, int es\+\_\+size)
+\item 
+Mat \textbf{ post\+Proc} (Mat mat, int es\+\_\+size)
+\item 
+int[$\,$] \textbf{ get\+Barycenter} (Mat mat, int prec)
+\item 
+Mat \textbf{ draw\+Circle} (Mat mat, int[$\,$] coord, int size)
+\item 
+Mat \textbf{ draw\+Circle\+Color} (Mat mat, int[$\,$] coord, int size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \doxyref{img\+Proc}{p.}{classimg_proc_1_1img_proc} reunie les methodes de traitement d\textquotesingle{}image. ~\newline
+On fais donc appel a ses diverses fonctions pour calculer le barycentre de l\textquotesingle{}objet. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classimg_proc_1_1img_proc_a750514becdd662738f670c9068f16de9}} 
+\index{imgProc.imgProc@{imgProc.imgProc}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!imgProc.imgProc@{imgProc.imgProc}}
+\doxysubsubsection{drawCircle()}
+{\footnotesize\ttfamily Mat img\+Proc.\+img\+Proc.\+draw\+Circle (\begin{DoxyParamCaption}\item[{Mat}]{mat,  }\item[{int[$\,$]}]{coord,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Represente le Barycentre calcule avec un cercle rouge. ~\newline
+Affiche ce barycentre sur le dessin depuis \doxyref{model.\+My\+Controller.\+grab\+Frame()}{p.}{classmodel_1_1_my_controller_abae8d5e641d7fc53bbcd4554c4079d44}.\mbox{\label{classimg_proc_1_1img_proc_a5722cf662e9396e574dc3de7f98a80c9}} 
+\index{imgProc.imgProc@{imgProc.imgProc}!drawCircleColor@{drawCircleColor}}
+\index{drawCircleColor@{drawCircleColor}!imgProc.imgProc@{imgProc.imgProc}}
+\doxysubsubsection{drawCircleColor()}
+{\footnotesize\ttfamily Mat img\+Proc.\+img\+Proc.\+draw\+Circle\+Color (\begin{DoxyParamCaption}\item[{Mat}]{mat,  }\item[{int[$\,$]}]{coord,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Represente le Barycentre calcule avec un cercle rouge.~\newline
+Affiche ce barycentre sur l\textquotesingle{}image de la camera apres traitement.~\newline
+L\textquotesingle{}appel de cette fonction se fait depuis \doxyref{model.\+My\+Controller.\+grab\+Frame()}{p.}{classmodel_1_1_my_controller_abae8d5e641d7fc53bbcd4554c4079d44}.\mbox{\label{classimg_proc_1_1img_proc_ac99e6bca21bb73c03366adc8a93f2b22}} 
+\index{imgProc.imgProc@{imgProc.imgProc}!getBarycenter@{getBarycenter}}
+\index{getBarycenter@{getBarycenter}!imgProc.imgProc@{imgProc.imgProc}}
+\doxysubsubsection{getBarycenter()}
+{\footnotesize\ttfamily int [$\,$] img\+Proc.\+img\+Proc.\+get\+Barycenter (\begin{DoxyParamCaption}\item[{Mat}]{mat,  }\item[{int}]{prec }\end{DoxyParamCaption})}
+
+Apres avoir detache l\textquotesingle{}objet du fond on cherche le centre de cet objet.~\newline
+Cette fonction calcule le barycentre des elements blancs d\textquotesingle{}une image en N\&B. ~\newline
+\mbox{\label{classimg_proc_1_1img_proc_a521512c0ac1a9198b8739b93747515a7}} 
+\index{imgProc.imgProc@{imgProc.imgProc}!getBW@{getBW}}
+\index{getBW@{getBW}!imgProc.imgProc@{imgProc.imgProc}}
+\doxysubsubsection{getBW()}
+{\footnotesize\ttfamily Mat img\+Proc.\+img\+Proc.\+get\+BW (\begin{DoxyParamCaption}\item[{Mat}]{mat,  }\item[{double}]{hue\+Start,  }\item[{double}]{hue\+Stop,  }\item[{double}]{saturation\+Start,  }\item[{double}]{saturation\+Stop,  }\item[{double}]{value\+Start,  }\item[{double}]{value\+Stop }\end{DoxyParamCaption})}
+
+On recupere les differentes valeurs des parametres de detection comme la saturation ou la teinte. ~\newline
+C\textquotesingle{}est le deuxieme traitement applique sur l\textquotesingle{}image. ~\newline
+Transforme l\textquotesingle{}image couleur obtenue en image Noir et Blanc. ~\newline
+Les parties de l\textquotesingle{}image rentrant dans les parametres choisi sont en blanc et le reste devient noir. ~\newline
+ On a donc en sortie une image en N\&B avec les elements interessant (l\textquotesingle{}objet) en blanc et le fond en noir.\mbox{\label{classimg_proc_1_1img_proc_af0280b60cae439d05f3cc2c4e767d725}} 
+\index{imgProc.imgProc@{imgProc.imgProc}!postProc@{postProc}}
+\index{postProc@{postProc}!imgProc.imgProc@{imgProc.imgProc}}
+\doxysubsubsection{postProc()}
+{\footnotesize\ttfamily Mat img\+Proc.\+img\+Proc.\+post\+Proc (\begin{DoxyParamCaption}\item[{Mat}]{mat,  }\item[{int}]{es\+\_\+size }\end{DoxyParamCaption})}
+
+Dernier traitement de l\textquotesingle{}image. ~\newline
+Cree 2 elements structurants puis realise une ouverture et une fermeture avec ces elements. ~\newline
+Cette fonction supprime les petis elements (parasites) afin de ne garder que l\textquotesingle{}objet. ~\newline
+\mbox{\label{classimg_proc_1_1img_proc_a914e2ea9f8e016c75d9a822b56f515a6}} 
+\index{imgProc.imgProc@{imgProc.imgProc}!preProc@{preProc}}
+\index{preProc@{preProc}!imgProc.imgProc@{imgProc.imgProc}}
+\doxysubsubsection{preProc()}
+{\footnotesize\ttfamily Mat img\+Proc.\+img\+Proc.\+pre\+Proc (\begin{DoxyParamCaption}\item[{Mat}]{mat,  }\item[{int}]{es\+\_\+size }\end{DoxyParamCaption})}
+
+Premier traitement de l\textquotesingle{}image obtenu par la webcam. ~\newline
+On applique un flou sur l\textquotesingle{}image avec un element structurant de taille es\+\_\+size.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+img\+Proc/\textbf{ img\+Proc.\+java}\end{DoxyCompactItemize}

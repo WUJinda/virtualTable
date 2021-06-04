@@ -1,0 +1,97 @@
+\doxysection{model.\+Main Class Reference}
+\label{classmodel_1_1_main}\index{model.Main@{model.Main}}
+Inheritance diagram for model.\+Main\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodel_1_1_main}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ start} (Stage primary\+Stage)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ main} (String[$\,$] args)
+\item 
+static void \textbf{ Rajout\+Feuille} (int Indice, double hue\+Start, double hue\+Stop, double saturation\+Start, double saturation\+Stop, double value\+Start, double value\+Stop, double sensibility)
+\item 
+static void \textbf{ Changer\+Feuille\+Droite} (int Indice)
+\item 
+static void \textbf{ Changer\+Feuille\+Gauche} (int Indice)
+\item 
+static void \textbf{ Changer\+Texte} (int Indice)
+\item 
+static void \textbf{ Close\+\_\+\+All} (\textbf{ My\+Controller}[$\,$] Tab\+Control)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe servant a la definition de diverses fonctions. ~\newline
+On y retrouve nottament les fonctions de gestion de feuille. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classmodel_1_1_main_af3b5b6fcf6cd38eafcecfb93524306bd}} 
+\index{model.Main@{model.Main}!ChangerFeuilleDroite@{ChangerFeuilleDroite}}
+\index{ChangerFeuilleDroite@{ChangerFeuilleDroite}!model.Main@{model.Main}}
+\doxysubsubsection{ChangerFeuilleDroite()}
+{\footnotesize\ttfamily static void model.\+Main.\+Changer\+Feuille\+Droite (\begin{DoxyParamCaption}\item[{int}]{Indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fonction permettant d\textquotesingle{}afficher la feuille suivante.~\newline
+Elle prend en entree l\textquotesingle{}indice de la feuille actuelle. ~\newline
+Elle s\textquotesingle{}active avec \doxyref{My\+Controller.\+Changer\+Feuille\+D()}{p.}{classmodel_1_1_my_controller_a233011aa029c0fbb4ae1a12ecef16f59} \mbox{\label{classmodel_1_1_main_aab086eea2f5104eb70329f99335eeb1b}} 
+\index{model.Main@{model.Main}!ChangerFeuilleGauche@{ChangerFeuilleGauche}}
+\index{ChangerFeuilleGauche@{ChangerFeuilleGauche}!model.Main@{model.Main}}
+\doxysubsubsection{ChangerFeuilleGauche()}
+{\footnotesize\ttfamily static void model.\+Main.\+Changer\+Feuille\+Gauche (\begin{DoxyParamCaption}\item[{int}]{Indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fonction permettant d\textquotesingle{}afficher la feuille precedente.~\newline
+Elle prend en entree l\textquotesingle{}indice de la feuille actuelle. ~\newline
+Elle s\textquotesingle{}active avec \doxyref{My\+Controller.\+Changer\+Feuille\+G()}{p.}{classmodel_1_1_my_controller_a2dfdbe8e680ad649a69b24defab626a0} \mbox{\label{classmodel_1_1_main_a849e62b4499ca2a921b8f39821a01a41}} 
+\index{model.Main@{model.Main}!ChangerTexte@{ChangerTexte}}
+\index{ChangerTexte@{ChangerTexte}!model.Main@{model.Main}}
+\doxysubsubsection{ChangerTexte()}
+{\footnotesize\ttfamily static void model.\+Main.\+Changer\+Texte (\begin{DoxyParamCaption}\item[{int}]{Indice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fonction permettant de mettre a jour le comptage des feuilles. ~\newline
+ex \+: feuille 3/5 ~\newline
+Elle prend en entree l\textquotesingle{}indice de la feuille actuelle.~\newline
+Elle s\textquotesingle{}active avec \doxyref{Rajout\+Feuille()}{p.}{classmodel_1_1_main_a26dea338a9d91338caf5ff127902afe5} \mbox{\label{classmodel_1_1_main_a243f78aae6a68c953c40e5f692fc194e}} 
+\index{model.Main@{model.Main}!Close\_All@{Close\_All}}
+\index{Close\_All@{Close\_All}!model.Main@{model.Main}}
+\doxysubsubsection{Close\_All()}
+{\footnotesize\ttfamily static void model.\+Main.\+Close\+\_\+\+All (\begin{DoxyParamCaption}\item[{\textbf{ My\+Controller}[$\,$]}]{Tab\+Control }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fonction permettant d\textquotesingle{}arreter completement l\textquotesingle{}application. ~\newline
+Arrete toutes les pages ouvertes. \mbox{\label{classmodel_1_1_main_a77ee46b3cbb9b504d8e6a4d5152bc45e}} 
+\index{model.Main@{model.Main}!main@{main}}
+\index{main@{main}!model.Main@{model.Main}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily static void model.\+Main.\+main (\begin{DoxyParamCaption}\item[{String[$\,$]}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fonction s\textquotesingle{}activant au lancement de l\textquotesingle{}application. ~\newline
+Cette fonction permet de charger la bibliotheque opencv. Lance la fonction \doxyref{start()}{p.}{classmodel_1_1_main_af72e8a1d5138bebdb27a58ee1c19a44f}\mbox{\label{classmodel_1_1_main_a26dea338a9d91338caf5ff127902afe5}} 
+\index{model.Main@{model.Main}!RajoutFeuille@{RajoutFeuille}}
+\index{RajoutFeuille@{RajoutFeuille}!model.Main@{model.Main}}
+\doxysubsubsection{RajoutFeuille()}
+{\footnotesize\ttfamily static void model.\+Main.\+Rajout\+Feuille (\begin{DoxyParamCaption}\item[{int}]{Indice,  }\item[{double}]{hue\+Start,  }\item[{double}]{hue\+Stop,  }\item[{double}]{saturation\+Start,  }\item[{double}]{saturation\+Stop,  }\item[{double}]{value\+Start,  }\item[{double}]{value\+Stop,  }\item[{double}]{sensibility }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fonction gerant le rajout de feuille. ~\newline
+Elle prend en entree l\textquotesingle{}indice de la feuille actuelle ainsi que ses parametres de detection de l\textquotesingle{}objet.~\newline
+S\textquotesingle{}il y a deja 8 feuilles d\textquotesingle{}ouvertes, on affiche un message d\textquotesingle{}erreur. ~\newline
+Elle s\textquotesingle{}active avec \doxyref{My\+Controller.\+Changer\+Feuille()}{p.}{classmodel_1_1_my_controller_a662abb516462f862c5c2522c32795a3a} \mbox{\label{classmodel_1_1_main_af72e8a1d5138bebdb27a58ee1c19a44f}} 
+\index{model.Main@{model.Main}!start@{start}}
+\index{start@{start}!model.Main@{model.Main}}
+\doxysubsubsection{start()}
+{\footnotesize\ttfamily void model.\+Main.\+start (\begin{DoxyParamCaption}\item[{Stage}]{primary\+Stage }\end{DoxyParamCaption})}
+
+Fonction s\textquotesingle{}activant au lancement de l\textquotesingle{}application. ~\newline
+Cette fonction permet de generer la premiere feuille de dessin.
+
+Read file fxml and draw interface.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/\textbf{ Main.\+java}\end{DoxyCompactItemize}

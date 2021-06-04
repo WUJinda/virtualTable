@@ -1,0 +1,798 @@
+\doxysection{model.\+My\+Controller Class Reference}
+\label{classmodel_1_1_my_controller}\index{model.MyController@{model.MyController}}
+Inheritance diagram for model.\+My\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodel_1_1_my_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ initialize} (U\+RL location, Resource\+Bundle resources)
+\item 
+void \textbf{ Enregistrer} (Action\+Event event)
+\item 
+void \textbf{ Clean} (Action\+Event event)
+\item 
+void \textbf{ Gomme\+\_\+clic} (Action\+Event event)
+\item 
+void \textbf{ draw\+\_\+push} (Mouse\+Event event)
+\item 
+void \textbf{ draw\+\_\+drag} (Mouse\+Event event)
+\item 
+void \textbf{ draw\+\_\+released} (Mouse\+Event event)
+\item 
+void \textbf{ set\+My\+Primary\+Stage} (Stage primary\+Stage)
+\item 
+void \textbf{ Changer\+Feuille} (Action\+Event event)
+\item 
+void \textbf{ Changer\+FeuilleD} ()
+\item 
+void \textbf{ Changer\+FeuilleG} ()
+\item 
+void \textbf{ set\+IndiceI} (int Indice)
+\item 
+int \textbf{ Get\+Indice} (int Indice)
+\item 
+void \textbf{ set\+Texte} (int Indice)
+\item 
+void \textbf{ set\+Valeur} (double hue\+Start\+\_\+, double hue\+Stop\+\_\+, double saturation\+Start\+\_\+, double saturation\+Stop\+\_\+, double value\+Start\+\_\+, double value\+Stop\+\_\+, double sensibility\+\_\+)
+\item 
+void \textbf{ Plus\+Taille} ()
+\item 
+void \textbf{ Moins\+Taille} ()
+\item 
+void \textbf{ start\+Drawing} (Action\+Event evt)
+\item 
+void \textbf{ change\+UI} (Action\+Event evt)
+\item 
+void \textbf{ tutorial} (Action\+Event evt)
+\item 
+void \textbf{ flipped} ()
+\item 
+void \textbf{ cam\+Draw} (int x, int y, int prex, int prey, int tolerance)
+\item 
+void \textbf{ camera\+Button} ()
+\item 
+void \textbf{ shorcuts\+Gestures} ()
+\item 
+void \textbf{ start\+Camera} (Action\+Event event)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ set\+Closed} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Mat[$\,$] \textbf{ grab\+Frame} ()
+\item 
+void \textbf{ stop\+Acquisition} ()
+\item 
+void \textbf{ update\+Image\+View} (Image\+View view, Image image)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Button \textbf{ Bouton\+Enregistrer}
+\item 
+Button \textbf{ Bouton\+Gomme}
+\item 
+Button \textbf{ Bouton\+Gauche}
+\item 
+Button \textbf{ Bouton\+Droite}
+\item 
+Button \textbf{ Bouton\+ChangerF}
+\item 
+Button \textbf{ Bouton\+Plus}
+\item 
+Button \textbf{ Bouton\+Moins}
+\item 
+Button \textbf{ Bouton\+Clean}
+\item 
+Button \textbf{ cam}
+\item 
+Button \textbf{ cam\+Mode}
+\item 
+Button \textbf{ U\+I\+Mode}
+\item 
+Button \textbf{ Aide}
+\item 
+Text\+Field \textbf{ Texte\+Field}
+\item 
+Color\+Picker \textbf{ Bouton\+Couleur}
+\item 
+Slider \textbf{ hue\+Start}
+\item 
+Slider \textbf{ hue\+Stop}
+\item 
+Slider \textbf{ saturation\+Start}
+\item 
+Slider \textbf{ saturation\+Stop}
+\item 
+Slider \textbf{ value\+Start}
+\item 
+Slider \textbf{ value\+Stop}
+\item 
+Slider \textbf{ sensibility}
+\item 
+Label \textbf{ Label\+\_\+\+Page}
+\item 
+Label \textbf{ indic\+Gomme}
+\item 
+Label \textbf{ indic\+Police}
+\item 
+int \textbf{ Indice\+Feuille} =0
+\item 
+double \textbf{ Epaisseur\+Crayon} =5
+\item 
+int \textbf{ counter} = 0
+\item 
+long \textbf{ start\+Time} = 0
+\item 
+boolean \textbf{ drawing} = false
+\item 
+boolean \textbf{ drawing\+Previous} = false
+\item 
+boolean \textbf{ has\+Flipped} = false
+\item 
+boolean \textbf{ camera\+Active} = false
+\item 
+boolean \textbf{ camera\+Mode} = false
+\item 
+boolean \textbf{ cam\+UI} = false
+\item 
+boolean \textbf{ camera\+Mode\+Previous} = false
+\item 
+boolean \textbf{ Help} = false
+\item 
+boolean \textbf{ Gomme} =false
+\item 
+Canvas \textbf{ canvas1}
+\item 
+Canvas \textbf{ canvas2}
+\item 
+Canvas \textbf{ canvas3}
+\item 
+Canvas \textbf{ canvas4}
+\item 
+Graphics\+Context \textbf{ info}
+\item 
+Graphics\+Context \textbf{ cam\+Buttons}
+\item 
+Graphics\+Context \textbf{ cursor}
+\item 
+Anchor\+Pane \textbf{ Anchor\+Panel}
+\item 
+Stage \textbf{ my\+Primary\+Stage}
+\item 
+Image\+View \textbf{ current\+Frame\+Color}
+\item 
+Image\+View \textbf{ current\+Frame\+BW}
+\item 
+Scheduled\+Executor\+Service \textbf{ timer}
+\item 
+Video\+Capture \textbf{ capture} = new Video\+Capture()
+\item 
+final int \textbf{ LayoutX} = 50
+\item 
+final int \textbf{ Layout\+Xbis} = 160
+\item 
+final int \textbf{ Layout\+Y\+Gomme} = 100
+\item 
+final int \textbf{ Layout\+Y\+Effacer} = 250
+\item 
+final int \textbf{ Layout\+Y\+Taille} = 400
+\item 
+final int \textbf{ Width} = 210
+\item 
+final int \textbf{ Height} = 100
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \textbf{ camera\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controleur des pages de dessin ~\newline
+Chaque feuille possede un unique controleur independant des autres. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classmodel_1_1_my_controller_a45857d238922c4d56d25142c0a3415b7}} 
+\index{model.MyController@{model.MyController}!camDraw@{camDraw}}
+\index{camDraw@{camDraw}!model.MyController@{model.MyController}}
+\doxysubsubsection{camDraw()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+cam\+Draw (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{prex,  }\item[{int}]{prey,  }\item[{int}]{tolerance }\end{DoxyParamCaption})}
+
+Cette fonction permet de dessiner avec la camera. ~\newline
+On utilise les meme principe que dans les fonction \doxyref{draw\+\_\+released()}{p.}{classmodel_1_1_my_controller_ae4432debc9942d9e9599890908e62414} \doxyref{draw\+\_\+push()}{p.}{classmodel_1_1_my_controller_a32b39b5fd8cb9d9bfe61fe1e8e7575b7} et \doxyref{draw\+\_\+drag()}{p.}{classmodel_1_1_my_controller_a44d95bfdbf50461c15c63bf7a231fa33}.~\newline
+Cependant, on utilise plus les mouvement et coordonnees de la souris mais les mouvement de l\textquotesingle{}objet detecte.\mbox{\label{classmodel_1_1_my_controller_a02bc0a11f65501bcefc219f7601dacb7}} 
+\index{model.MyController@{model.MyController}!cameraButton@{cameraButton}}
+\index{cameraButton@{cameraButton}!model.MyController@{model.MyController}}
+\doxysubsubsection{cameraButton()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+camera\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Lance des actions en fonction de la positon de l\textquotesingle{}objet. ~\newline
+On utilise cette fonction uniquement avec l\textquotesingle{}interface Camera UI.~\newline
+On peut activer la gomme, tout nettoyer et modifier la taille selon la position de l\textquotesingle{}objet.\mbox{\label{classmodel_1_1_my_controller_a662abb516462f862c5c2522c32795a3a}} 
+\index{model.MyController@{model.MyController}!ChangerFeuille@{ChangerFeuille}}
+\index{ChangerFeuille@{ChangerFeuille}!model.MyController@{model.MyController}}
+\doxysubsubsection{ChangerFeuille()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+Changer\+Feuille (\begin{DoxyParamCaption}\item[{Action\+Event}]{event }\end{DoxyParamCaption})}
+
+Fonction activant la fonction \doxyref{Main.\+Rajout\+Feuille()}{p.}{classmodel_1_1_main_a26dea338a9d91338caf5ff127902afe5} ~\newline
+Envoie les parametres de detection et l\textquotesingle{}indice de la feuille. ~\newline
+\mbox{\label{classmodel_1_1_my_controller_a233011aa029c0fbb4ae1a12ecef16f59}} 
+\index{model.MyController@{model.MyController}!ChangerFeuilleD@{ChangerFeuilleD}}
+\index{ChangerFeuilleD@{ChangerFeuilleD}!model.MyController@{model.MyController}}
+\doxysubsubsection{ChangerFeuilleD()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+Changer\+FeuilleD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fonction activant la fonction \doxyref{Main.\+Changer\+Feuille\+Droite()}{p.}{classmodel_1_1_main_af3b5b6fcf6cd38eafcecfb93524306bd} ~\newline
+Envoie l\textquotesingle{}indice de la feuille. ~\newline
+\mbox{\label{classmodel_1_1_my_controller_a2dfdbe8e680ad649a69b24defab626a0}} 
+\index{model.MyController@{model.MyController}!ChangerFeuilleG@{ChangerFeuilleG}}
+\index{ChangerFeuilleG@{ChangerFeuilleG}!model.MyController@{model.MyController}}
+\doxysubsubsection{ChangerFeuilleG()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+Changer\+FeuilleG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fonction activant la fonction \doxyref{Main.\+Changer\+Feuille\+Gauche()}{p.}{classmodel_1_1_main_aab086eea2f5104eb70329f99335eeb1b} ~\newline
+Envoie l\textquotesingle{}indice de la feuille. ~\newline
+\mbox{\label{classmodel_1_1_my_controller_a6fe6bd6033c158ae72a6adbf72de13c1}} 
+\index{model.MyController@{model.MyController}!changeUI@{changeUI}}
+\index{changeUI@{changeUI}!model.MyController@{model.MyController}}
+\doxysubsubsection{changeUI()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+change\+UI (\begin{DoxyParamCaption}\item[{Action\+Event}]{evt }\end{DoxyParamCaption})}
+
+Modifie l\textquotesingle{}interface affiche afin que celle-\/ci soit plus simple a utiliser avec le webcam. ~\newline
+On rentre dans la fonction lorsque l\textquotesingle{}on clique sur Camera UI.\mbox{\label{classmodel_1_1_my_controller_a815974a5f3cd4831ea7cc7736066ec03}} 
+\index{model.MyController@{model.MyController}!Clean@{Clean}}
+\index{Clean@{Clean}!model.MyController@{model.MyController}}
+\doxysubsubsection{Clean()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+Clean (\begin{DoxyParamCaption}\item[{Action\+Event}]{event }\end{DoxyParamCaption})}
+
+Fonction permettant de supprimer tout les traces de l\textquotesingle{}image. ~\newline
+S\textquotesingle{}active lors d\textquotesingle{}un clic sur le bouton \char`\"{}\+Tout effacer\char`\"{}\mbox{\label{classmodel_1_1_my_controller_a44d95bfdbf50461c15c63bf7a231fa33}} 
+\index{model.MyController@{model.MyController}!draw\_drag@{draw\_drag}}
+\index{draw\_drag@{draw\_drag}!model.MyController@{model.MyController}}
+\doxysubsubsection{draw\_drag()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+draw\+\_\+drag (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{event }\end{DoxyParamCaption})}
+
+Fonction permettant de continuer un trait ~\newline
+Elle s\textquotesingle{}active au moment ou l\textquotesingle{}utilisateur bouge la souris sur la feuille en maintenant le clic. ~\newline
+On continue le chemin en recuperant les coordonees de la souris~\newline
+Le chemin debute et finis dans les fonctions \+:~\newline
+\doxyref{draw\+\_\+push()}{p.}{classmodel_1_1_my_controller_a32b39b5fd8cb9d9bfe61fe1e8e7575b7} et \doxyref{draw\+\_\+released()}{p.}{classmodel_1_1_my_controller_ae4432debc9942d9e9599890908e62414}\mbox{\label{classmodel_1_1_my_controller_a32b39b5fd8cb9d9bfe61fe1e8e7575b7}} 
+\index{model.MyController@{model.MyController}!draw\_push@{draw\_push}}
+\index{draw\_push@{draw\_push}!model.MyController@{model.MyController}}
+\doxysubsubsection{draw\_push()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+draw\+\_\+push (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{event }\end{DoxyParamCaption})}
+
+Fonction permettant de debuter un trait. ~\newline
+Elle s\textquotesingle{}active au moment ou l\textquotesingle{}utilisateur clique sur le dessin. ~\newline
+On debute un chemin en recuperant les coordonees de la souris~\newline
+Le chemin est continue puis fini dans les fonctions \+:~\newline
+\doxyref{draw\+\_\+drag()}{p.}{classmodel_1_1_my_controller_a44d95bfdbf50461c15c63bf7a231fa33} et \doxyref{draw\+\_\+released()}{p.}{classmodel_1_1_my_controller_ae4432debc9942d9e9599890908e62414}\mbox{\label{classmodel_1_1_my_controller_ae4432debc9942d9e9599890908e62414}} 
+\index{model.MyController@{model.MyController}!draw\_released@{draw\_released}}
+\index{draw\_released@{draw\_released}!model.MyController@{model.MyController}}
+\doxysubsubsection{draw\_released()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+draw\+\_\+released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{event }\end{DoxyParamCaption})}
+
+Fonction permettant de finir un trait ~\newline
+Elle s\textquotesingle{}active au moment ou l\textquotesingle{}utilisateur relache le clic de sa souris. ~\newline
+On termine le chemin aux coordonees de la souris~\newline
+Le chemin debute et continue dans les fonctions \+:~\newline
+\doxyref{draw\+\_\+push()}{p.}{classmodel_1_1_my_controller_a32b39b5fd8cb9d9bfe61fe1e8e7575b7} et \doxyref{draw\+\_\+drag()}{p.}{classmodel_1_1_my_controller_a44d95bfdbf50461c15c63bf7a231fa33}\mbox{\label{classmodel_1_1_my_controller_a2385c4025f54fc686040ccf39a6a54c4}} 
+\index{model.MyController@{model.MyController}!Enregistrer@{Enregistrer}}
+\index{Enregistrer@{Enregistrer}!model.MyController@{model.MyController}}
+\doxysubsubsection{Enregistrer()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+Enregistrer (\begin{DoxyParamCaption}\item[{Action\+Event}]{event }\end{DoxyParamCaption})}
+
+Fonction permettant d\textquotesingle{}enregistrer le dessin dans un fichier desire.~\newline
+S\textquotesingle{}active lors d\textquotesingle{}un clic sur le bouton Enregistrer.\mbox{\label{classmodel_1_1_my_controller_a3e1e3c132b8b55807889b09c088da257}} 
+\index{model.MyController@{model.MyController}!flipped@{flipped}}
+\index{flipped@{flipped}!model.MyController@{model.MyController}}
+\doxysubsubsection{flipped()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+flipped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Modifie la variable has\+Flipped en fonction du comportement de l\textquotesingle{}objet. ~\newline
+On detecte ainsi si l\textquotesingle{}objet est cache. ~\newline
+Cette fonction est utilisee dans \doxyref{grab\+Frame()}{p.}{classmodel_1_1_my_controller_abae8d5e641d7fc53bbcd4554c4079d44}.\mbox{\label{classmodel_1_1_my_controller_a16feab4d342b2af9aa7778549d64b2a6}} 
+\index{model.MyController@{model.MyController}!GetIndice@{GetIndice}}
+\index{GetIndice@{GetIndice}!model.MyController@{model.MyController}}
+\doxysubsubsection{GetIndice()}
+{\footnotesize\ttfamily int model.\+My\+Controller.\+Get\+Indice (\begin{DoxyParamCaption}\item[{int}]{Indice }\end{DoxyParamCaption})}
+
+Retourne la variable Indice\+Feuille du controlleur. ~\newline
+S\textquotesingle{}active dans \doxyref{Main.\+Close\+\_\+\+All()}{p.}{classmodel_1_1_main_a243f78aae6a68c953c40e5f692fc194e} ~\newline
+\mbox{\label{classmodel_1_1_my_controller_ac110c6bc054270712dfa411a5ee90773}} 
+\index{model.MyController@{model.MyController}!Gomme\_clic@{Gomme\_clic}}
+\index{Gomme\_clic@{Gomme\_clic}!model.MyController@{model.MyController}}
+\doxysubsubsection{Gomme\_clic()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+Gomme\+\_\+clic (\begin{DoxyParamCaption}\item[{Action\+Event}]{event }\end{DoxyParamCaption})}
+
+Fonction permettant d\textquotesingle{}activer ou de desactiver la gomme. S\textquotesingle{}active lors d\textquotesingle{}un clic sur le bouton Gomme.\mbox{\label{classmodel_1_1_my_controller_abae8d5e641d7fc53bbcd4554c4079d44}} 
+\index{model.MyController@{model.MyController}!grabFrame@{grabFrame}}
+\index{grabFrame@{grabFrame}!model.MyController@{model.MyController}}
+\doxysubsubsection{grabFrame()}
+{\footnotesize\ttfamily Mat [$\,$] model.\+My\+Controller.\+grab\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Get a frame from the opened video stream (if any)
+
+\begin{DoxyReturn}{Returns}
+the \doxyref{Mat}{p.}{} to show 
+\end{DoxyReturn}
+Applique les différentes methodes de \doxyref{img\+Proc}{p.}{namespaceimg_proc} sur l\textquotesingle{}image acquise par la caméra. ~\newline
+On obtient alors les coordonnees du barycentre qu\textquotesingle{}on utilise pour dessiner.\mbox{\label{classmodel_1_1_my_controller_a8d52e498e416428c129dfac75b85a5ab}} 
+\index{model.MyController@{model.MyController}!initialize@{initialize}}
+\index{initialize@{initialize}!model.MyController@{model.MyController}}
+\doxysubsubsection{initialize()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+initialize (\begin{DoxyParamCaption}\item[{U\+RL}]{location,  }\item[{Resource\+Bundle}]{resources }\end{DoxyParamCaption})}
+
+Fonction d\textquotesingle{}initialisation du controleur.~\newline
+Chaque controleur Mycontrolleur execute cette fonction à sa creation. ~\newline
+\mbox{\label{classmodel_1_1_my_controller_a166d0fc88e05bc1583288f53bf3b381a}} 
+\index{model.MyController@{model.MyController}!MoinsTaille@{MoinsTaille}}
+\index{MoinsTaille@{MoinsTaille}!model.MyController@{model.MyController}}
+\doxysubsubsection{MoinsTaille()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+Moins\+Taille (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Diminue la variable Epaisseur\+Crayon (avec une limite min). ~\newline
+S\textquotesingle{}active lors du clic sur le bouton -\/.\mbox{\label{classmodel_1_1_my_controller_a65b15378b40feab0ee9fcfdf652d01dd}} 
+\index{model.MyController@{model.MyController}!PlusTaille@{PlusTaille}}
+\index{PlusTaille@{PlusTaille}!model.MyController@{model.MyController}}
+\doxysubsubsection{PlusTaille()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+Plus\+Taille (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Augmente la variable Epaisseur\+Crayon (avec une limite max). ~\newline
+S\textquotesingle{}active lors du clic sur le bouton +.\mbox{\label{classmodel_1_1_my_controller_ab2877d2286a9f4c464fb483b94234cfe}} 
+\index{model.MyController@{model.MyController}!setClosed@{setClosed}}
+\index{setClosed@{setClosed}!model.MyController@{model.MyController}}
+\doxysubsubsection{setClosed()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+set\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+On Stop l\textquotesingle{}acquisition.~\newline
+Cette fonction fais appel a \doxyref{stop\+Acquisition()}{p.}{classmodel_1_1_my_controller_ac779dc71139980732a42de8078c0dc95}.~\newline
+Elle s\textquotesingle{}active depuis la fonction \doxyref{Main.\+Close\+\_\+\+All()}{p.}{classmodel_1_1_main_a243f78aae6a68c953c40e5f692fc194e}. \mbox{\label{classmodel_1_1_my_controller_a9e7261cd48540cf0f85be0dc73034df0}} 
+\index{model.MyController@{model.MyController}!setIndiceI@{setIndiceI}}
+\index{setIndiceI@{setIndiceI}!model.MyController@{model.MyController}}
+\doxysubsubsection{setIndiceI()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+set\+IndiceI (\begin{DoxyParamCaption}\item[{int}]{Indice }\end{DoxyParamCaption})}
+
+Fonction recuperant l\textquotesingle{}indice de la feuille. ~\newline
+ On definie la variable Indice\+Feuille. ~\newline
+S\textquotesingle{}active lors de l\textquotesingle{}initialisation d\textquotesingle{}une feuille dans \doxyref{Main.\+Rajout\+Feuille()}{p.}{classmodel_1_1_main_a26dea338a9d91338caf5ff127902afe5} ou \doxyref{Main.\+start()}{p.}{classmodel_1_1_main_af72e8a1d5138bebdb27a58ee1c19a44f}. ~\newline
+\mbox{\label{classmodel_1_1_my_controller_a8020a1e88f97455f994e02844022ffab}} 
+\index{model.MyController@{model.MyController}!setMyPrimaryStage@{setMyPrimaryStage}}
+\index{setMyPrimaryStage@{setMyPrimaryStage}!model.MyController@{model.MyController}}
+\doxysubsubsection{setMyPrimaryStage()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+set\+My\+Primary\+Stage (\begin{DoxyParamCaption}\item[{Stage}]{primary\+Stage }\end{DoxyParamCaption})}
+
+Fonction permettant de recuperer le stage controle par le controleur ~\newline
+ \mbox{\label{classmodel_1_1_my_controller_a07535d4a86795d4327fe9e88fb5aedbd}} 
+\index{model.MyController@{model.MyController}!setTexte@{setTexte}}
+\index{setTexte@{setTexte}!model.MyController@{model.MyController}}
+\doxysubsubsection{setTexte()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+set\+Texte (\begin{DoxyParamCaption}\item[{int}]{Indice }\end{DoxyParamCaption})}
+
+Modifie le texte indiquant le nombre de feuille ouverte et la localisation de la feuille actuelle. ~\newline
+S\textquotesingle{}active dans \doxyref{Main.\+Changer\+Texte()}{p.}{classmodel_1_1_main_a849e62b4499ca2a921b8f39821a01a41} ~\newline
+\mbox{\label{classmodel_1_1_my_controller_a04aeb3ec7f33d1251f4488dc4d68c3d3}} 
+\index{model.MyController@{model.MyController}!setValeur@{setValeur}}
+\index{setValeur@{setValeur}!model.MyController@{model.MyController}}
+\doxysubsubsection{setValeur()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+set\+Valeur (\begin{DoxyParamCaption}\item[{double}]{hue\+Start\+\_\+,  }\item[{double}]{hue\+Stop\+\_\+,  }\item[{double}]{saturation\+Start\+\_\+,  }\item[{double}]{saturation\+Stop\+\_\+,  }\item[{double}]{value\+Start\+\_\+,  }\item[{double}]{value\+Stop\+\_\+,  }\item[{double}]{sensibility\+\_\+ }\end{DoxyParamCaption})}
+
+Attribue les valeurs de la detection de cette feuille selon les valeurs de la feuille precedente ~\newline
+S\textquotesingle{}active dans \doxyref{Main.\+Rajout\+Feuille()}{p.}{classmodel_1_1_main_a26dea338a9d91338caf5ff127902afe5} lorsque l\textquotesingle{}on cree une nouvelle feuille.\mbox{\label{classmodel_1_1_my_controller_af615d2e1501746b4650eeb5ee10fe7a3}} 
+\index{model.MyController@{model.MyController}!shorcutsGestures@{shorcutsGestures}}
+\index{shorcutsGestures@{shorcutsGestures}!model.MyController@{model.MyController}}
+\doxysubsubsection{shorcutsGestures()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+shorcuts\+Gestures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cette fonction n\textquotesingle{}est plus utilisee.~\newline
+Elle permettait de realiser diverse fonction selon des actions precise de l\textquotesingle{}utilisateur.~\newline
+On pouvait par exemple passer en mode gomme en cachant 4 fois d\textquotesingle{}affile l\textquotesingle{}objet. ~\newline
+Pour des raisons de praticite, on n\textquotesingle{}utilise plus ces raccourcis\mbox{\label{classmodel_1_1_my_controller_a4e9c86dbcae1bb35399a98fe99274a3c}} 
+\index{model.MyController@{model.MyController}!startCamera@{startCamera}}
+\index{startCamera@{startCamera}!model.MyController@{model.MyController}}
+\doxysubsubsection{startCamera()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+start\+Camera (\begin{DoxyParamCaption}\item[{Action\+Event}]{event }\end{DoxyParamCaption})}
+
+Demarre l\textquotesingle{}acquisition de la camera et gere son affichage dans l\textquotesingle{}application. \mbox{\label{classmodel_1_1_my_controller_a097b70a18a0ccec10daa5b807eb41d8a}} 
+\index{model.MyController@{model.MyController}!startDrawing@{startDrawing}}
+\index{startDrawing@{startDrawing}!model.MyController@{model.MyController}}
+\doxysubsubsection{startDrawing()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+start\+Drawing (\begin{DoxyParamCaption}\item[{Action\+Event}]{evt }\end{DoxyParamCaption})}
+
+Modifie l\textquotesingle{}etat de la variable camera\+Mode. ~\newline
+Cette fonction permet de lancer le dessin via la detection de l\textquotesingle{}objet a la Webcam.~\newline
+ Elle s\textquotesingle{}active lorsque l\textquotesingle{}on clique sur le bouton Start Drawing.\mbox{\label{classmodel_1_1_my_controller_ac779dc71139980732a42de8078c0dc95}} 
+\index{model.MyController@{model.MyController}!stopAcquisition@{stopAcquisition}}
+\index{stopAcquisition@{stopAcquisition}!model.MyController@{model.MyController}}
+\doxysubsubsection{stopAcquisition()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+stop\+Acquisition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Arrete l\textquotesingle{}acquisition de la camera et supprime ses différentes ressource. ~\newline
+On l\textquotesingle{}active avec \doxyref{set\+Closed()}{p.}{classmodel_1_1_my_controller_ab2877d2286a9f4c464fb483b94234cfe}.\mbox{\label{classmodel_1_1_my_controller_a28cd76b5fce699d953fb3f4dfb4acb5e}} 
+\index{model.MyController@{model.MyController}!tutorial@{tutorial}}
+\index{tutorial@{tutorial}!model.MyController@{model.MyController}}
+\doxysubsubsection{tutorial()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+tutorial (\begin{DoxyParamCaption}\item[{Action\+Event}]{evt }\end{DoxyParamCaption})}
+
+Permet de choisir si l\textquotesingle{}on affiche ou non les messages du tutoriel.~\newline
+S\textquotesingle{}active lorsque l\textquotesingle{}on clique sur le point d\textquotesingle{}interogation.\mbox{\label{classmodel_1_1_my_controller_a6dc11c563b3c1cfff1bc3e880fae8ed1}} 
+\index{model.MyController@{model.MyController}!updateImageView@{updateImageView}}
+\index{updateImageView@{updateImageView}!model.MyController@{model.MyController}}
+\doxysubsubsection{updateImageView()}
+{\footnotesize\ttfamily void model.\+My\+Controller.\+update\+Image\+View (\begin{DoxyParamCaption}\item[{Image\+View}]{view,  }\item[{Image}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Update the \doxyref{Image\+View}{p.}{} in the Java\+FX main thread
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & the \doxyref{Image\+View}{p.}{} to update \\
+\hline
+{\em image} & the \doxyref{Image}{p.}{} to show \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\label{classmodel_1_1_my_controller_a5567650afe29ecb53433ff5475a06cc6}} 
+\index{model.MyController@{model.MyController}!Aide@{Aide}}
+\index{Aide@{Aide}!model.MyController@{model.MyController}}
+\doxysubsubsection{Aide}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Aide\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_af6ba887bba01acfd14bbd2e1d3953e7f}} 
+\index{model.MyController@{model.MyController}!AnchorPanel@{AnchorPanel}}
+\index{AnchorPanel@{AnchorPanel}!model.MyController@{model.MyController}}
+\doxysubsubsection{AnchorPanel}
+{\footnotesize\ttfamily Anchor\+Pane model.\+My\+Controller.\+Anchor\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a121c60217d6ad496aa57879ecb58344a}} 
+\index{model.MyController@{model.MyController}!BoutonChangerF@{BoutonChangerF}}
+\index{BoutonChangerF@{BoutonChangerF}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonChangerF}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Bouton\+ChangerF\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a4592b74ddf2393f151327ec3efedae89}} 
+\index{model.MyController@{model.MyController}!BoutonClean@{BoutonClean}}
+\index{BoutonClean@{BoutonClean}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonClean}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Bouton\+Clean\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a465c1cd108a3da66868e76dbb9064dfe}} 
+\index{model.MyController@{model.MyController}!BoutonCouleur@{BoutonCouleur}}
+\index{BoutonCouleur@{BoutonCouleur}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonCouleur}
+{\footnotesize\ttfamily Color\+Picker model.\+My\+Controller.\+Bouton\+Couleur\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a7d9f93e4abb629366f5b8ee584c6c3bf}} 
+\index{model.MyController@{model.MyController}!BoutonDroite@{BoutonDroite}}
+\index{BoutonDroite@{BoutonDroite}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonDroite}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Bouton\+Droite\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_abe73fdf0f4d2f5bdf7a74f7183fc9a66}} 
+\index{model.MyController@{model.MyController}!BoutonEnregistrer@{BoutonEnregistrer}}
+\index{BoutonEnregistrer@{BoutonEnregistrer}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonEnregistrer}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Bouton\+Enregistrer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a9159c7a7ab75548b5598e3f0bd50f760}} 
+\index{model.MyController@{model.MyController}!BoutonGauche@{BoutonGauche}}
+\index{BoutonGauche@{BoutonGauche}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonGauche}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Bouton\+Gauche\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a5ffffbe43fa1fcb3ae5721e7abdb4153}} 
+\index{model.MyController@{model.MyController}!BoutonGomme@{BoutonGomme}}
+\index{BoutonGomme@{BoutonGomme}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonGomme}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Bouton\+Gomme\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a1519840ee99b483496fabc0055bd50c3}} 
+\index{model.MyController@{model.MyController}!BoutonMoins@{BoutonMoins}}
+\index{BoutonMoins@{BoutonMoins}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonMoins}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Bouton\+Moins\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a6ecfd921423c3a676c8f5b792327db02}} 
+\index{model.MyController@{model.MyController}!BoutonPlus@{BoutonPlus}}
+\index{BoutonPlus@{BoutonPlus}!model.MyController@{model.MyController}}
+\doxysubsubsection{BoutonPlus}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+Bouton\+Plus\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_ace4d76555c7e91cf4977fd6414762532}} 
+\index{model.MyController@{model.MyController}!cam@{cam}}
+\index{cam@{cam}!model.MyController@{model.MyController}}
+\doxysubsubsection{cam}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+cam\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_abbeefcf616488cac08280a61b71915db}} 
+\index{model.MyController@{model.MyController}!camButtons@{camButtons}}
+\index{camButtons@{camButtons}!model.MyController@{model.MyController}}
+\doxysubsubsection{camButtons}
+{\footnotesize\ttfamily Graphics\+Context model.\+My\+Controller.\+cam\+Buttons\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_acbc2fd588c36c0df9a67fa6eeb74968e}} 
+\index{model.MyController@{model.MyController}!cameraActive@{cameraActive}}
+\index{cameraActive@{cameraActive}!model.MyController@{model.MyController}}
+\doxysubsubsection{cameraActive}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+camera\+Active = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a59e7bafd8e021fdd1f64d7daab359724}} 
+\index{model.MyController@{model.MyController}!cameraId@{cameraId}}
+\index{cameraId@{cameraId}!model.MyController@{model.MyController}}
+\doxysubsubsection{cameraId}
+{\footnotesize\ttfamily int model.\+My\+Controller.\+camera\+Id = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a25c989820f0f9312b9a6ff41a822918d}} 
+\index{model.MyController@{model.MyController}!cameraMode@{cameraMode}}
+\index{cameraMode@{cameraMode}!model.MyController@{model.MyController}}
+\doxysubsubsection{cameraMode}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+camera\+Mode = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_ae6c2a31c8658167f8a5f05819ee3168e}} 
+\index{model.MyController@{model.MyController}!cameraModePrevious@{cameraModePrevious}}
+\index{cameraModePrevious@{cameraModePrevious}!model.MyController@{model.MyController}}
+\doxysubsubsection{cameraModePrevious}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+camera\+Mode\+Previous = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_afb77fe5803aea3090a2654263277c4dc}} 
+\index{model.MyController@{model.MyController}!camMode@{camMode}}
+\index{camMode@{camMode}!model.MyController@{model.MyController}}
+\doxysubsubsection{camMode}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+cam\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_ae5b2774cc336e23cbf872deec2a86a77}} 
+\index{model.MyController@{model.MyController}!camUI@{camUI}}
+\index{camUI@{camUI}!model.MyController@{model.MyController}}
+\doxysubsubsection{camUI}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+cam\+UI = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a197743898dbb752c31c262f39f3e8db9}} 
+\index{model.MyController@{model.MyController}!canvas1@{canvas1}}
+\index{canvas1@{canvas1}!model.MyController@{model.MyController}}
+\doxysubsubsection{canvas1}
+{\footnotesize\ttfamily Canvas model.\+My\+Controller.\+canvas1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_abe382c3172d1496b7a6f16e4d829f076}} 
+\index{model.MyController@{model.MyController}!canvas2@{canvas2}}
+\index{canvas2@{canvas2}!model.MyController@{model.MyController}}
+\doxysubsubsection{canvas2}
+{\footnotesize\ttfamily Canvas model.\+My\+Controller.\+canvas2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a6338024225460bdd61c8abba850b7218}} 
+\index{model.MyController@{model.MyController}!canvas3@{canvas3}}
+\index{canvas3@{canvas3}!model.MyController@{model.MyController}}
+\doxysubsubsection{canvas3}
+{\footnotesize\ttfamily Canvas model.\+My\+Controller.\+canvas3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a6a76a745812e883e497b7914d3fe31bf}} 
+\index{model.MyController@{model.MyController}!canvas4@{canvas4}}
+\index{canvas4@{canvas4}!model.MyController@{model.MyController}}
+\doxysubsubsection{canvas4}
+{\footnotesize\ttfamily Canvas model.\+My\+Controller.\+canvas4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a2afce1a3129bef65c279a50dda668f76}} 
+\index{model.MyController@{model.MyController}!capture@{capture}}
+\index{capture@{capture}!model.MyController@{model.MyController}}
+\doxysubsubsection{capture}
+{\footnotesize\ttfamily Video\+Capture model.\+My\+Controller.\+capture = new Video\+Capture()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_afa74e898b8fd468b493cf3da79e75cb0}} 
+\index{model.MyController@{model.MyController}!counter@{counter}}
+\index{counter@{counter}!model.MyController@{model.MyController}}
+\doxysubsubsection{counter}
+{\footnotesize\ttfamily int model.\+My\+Controller.\+counter = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a6135dd4c316c5a5a62f38acf391555c0}} 
+\index{model.MyController@{model.MyController}!currentFrameBW@{currentFrameBW}}
+\index{currentFrameBW@{currentFrameBW}!model.MyController@{model.MyController}}
+\doxysubsubsection{currentFrameBW}
+{\footnotesize\ttfamily Image\+View model.\+My\+Controller.\+current\+Frame\+BW\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a330eb34db99231c0050e08aed6e93801}} 
+\index{model.MyController@{model.MyController}!currentFrameColor@{currentFrameColor}}
+\index{currentFrameColor@{currentFrameColor}!model.MyController@{model.MyController}}
+\doxysubsubsection{currentFrameColor}
+{\footnotesize\ttfamily Image\+View model.\+My\+Controller.\+current\+Frame\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_ae9cc1e1a2e183da455cc750e5f4d3b30}} 
+\index{model.MyController@{model.MyController}!cursor@{cursor}}
+\index{cursor@{cursor}!model.MyController@{model.MyController}}
+\doxysubsubsection{cursor}
+{\footnotesize\ttfamily Graphics\+Context model.\+My\+Controller.\+cursor\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a6aab960865d2c39a937828c79abaa068}} 
+\index{model.MyController@{model.MyController}!drawing@{drawing}}
+\index{drawing@{drawing}!model.MyController@{model.MyController}}
+\doxysubsubsection{drawing}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+drawing = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_aaf773d365ff391aca89ce5355620d96e}} 
+\index{model.MyController@{model.MyController}!drawingPrevious@{drawingPrevious}}
+\index{drawingPrevious@{drawingPrevious}!model.MyController@{model.MyController}}
+\doxysubsubsection{drawingPrevious}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+drawing\+Previous = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a622d228ca7624c9591daadbea890565e}} 
+\index{model.MyController@{model.MyController}!EpaisseurCrayon@{EpaisseurCrayon}}
+\index{EpaisseurCrayon@{EpaisseurCrayon}!model.MyController@{model.MyController}}
+\doxysubsubsection{EpaisseurCrayon}
+{\footnotesize\ttfamily double model.\+My\+Controller.\+Epaisseur\+Crayon =5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a301623095bacbf664092f26162dad973}} 
+\index{model.MyController@{model.MyController}!Gomme@{Gomme}}
+\index{Gomme@{Gomme}!model.MyController@{model.MyController}}
+\doxysubsubsection{Gomme}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+Gomme =false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_ae6f432888bac9305080695df5c59e7cc}} 
+\index{model.MyController@{model.MyController}!hasFlipped@{hasFlipped}}
+\index{hasFlipped@{hasFlipped}!model.MyController@{model.MyController}}
+\doxysubsubsection{hasFlipped}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+has\+Flipped = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a5d773352097d88db5e9ac81102285440}} 
+\index{model.MyController@{model.MyController}!Height@{Height}}
+\index{Height@{Height}!model.MyController@{model.MyController}}
+\doxysubsubsection{Height}
+{\footnotesize\ttfamily final int model.\+My\+Controller.\+Height = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a1410fa5ace04d20938e47c5ec060fb70}} 
+\index{model.MyController@{model.MyController}!Help@{Help}}
+\index{Help@{Help}!model.MyController@{model.MyController}}
+\doxysubsubsection{Help}
+{\footnotesize\ttfamily boolean model.\+My\+Controller.\+Help = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a0ee2283c4e2d603394ac2fe6e7270210}} 
+\index{model.MyController@{model.MyController}!hueStart@{hueStart}}
+\index{hueStart@{hueStart}!model.MyController@{model.MyController}}
+\doxysubsubsection{hueStart}
+{\footnotesize\ttfamily Slider model.\+My\+Controller.\+hue\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_afd65ef9248dd2f130da209195b28d175}} 
+\index{model.MyController@{model.MyController}!hueStop@{hueStop}}
+\index{hueStop@{hueStop}!model.MyController@{model.MyController}}
+\doxysubsubsection{hueStop}
+{\footnotesize\ttfamily Slider model.\+My\+Controller.\+hue\+Stop\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a1945702f4ff476bdad52382971a9b220}} 
+\index{model.MyController@{model.MyController}!IndiceFeuille@{IndiceFeuille}}
+\index{IndiceFeuille@{IndiceFeuille}!model.MyController@{model.MyController}}
+\doxysubsubsection{IndiceFeuille}
+{\footnotesize\ttfamily int model.\+My\+Controller.\+Indice\+Feuille =0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a3855e8ad0459d2e248797bc9edccda42}} 
+\index{model.MyController@{model.MyController}!indicGomme@{indicGomme}}
+\index{indicGomme@{indicGomme}!model.MyController@{model.MyController}}
+\doxysubsubsection{indicGomme}
+{\footnotesize\ttfamily Label model.\+My\+Controller.\+indic\+Gomme\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_aca31113e230dd70c56c723149e78fc10}} 
+\index{model.MyController@{model.MyController}!indicPolice@{indicPolice}}
+\index{indicPolice@{indicPolice}!model.MyController@{model.MyController}}
+\doxysubsubsection{indicPolice}
+{\footnotesize\ttfamily Label model.\+My\+Controller.\+indic\+Police\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a9a12fb5ab01d13d08ed7ed97c49070da}} 
+\index{model.MyController@{model.MyController}!info@{info}}
+\index{info@{info}!model.MyController@{model.MyController}}
+\doxysubsubsection{info}
+{\footnotesize\ttfamily Graphics\+Context model.\+My\+Controller.\+info\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_ab84e765f9a32ebec918c21e557fcd476}} 
+\index{model.MyController@{model.MyController}!Label\_Page@{Label\_Page}}
+\index{Label\_Page@{Label\_Page}!model.MyController@{model.MyController}}
+\doxysubsubsection{Label\_Page}
+{\footnotesize\ttfamily Label model.\+My\+Controller.\+Label\+\_\+\+Page\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a3f398ae6eddec2a806ce905ac462860e}} 
+\index{model.MyController@{model.MyController}!LayoutX@{LayoutX}}
+\index{LayoutX@{LayoutX}!model.MyController@{model.MyController}}
+\doxysubsubsection{LayoutX}
+{\footnotesize\ttfamily final int model.\+My\+Controller.\+LayoutX = 50\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a3f2d960ee32bff27d87896e49720af71}} 
+\index{model.MyController@{model.MyController}!LayoutXbis@{LayoutXbis}}
+\index{LayoutXbis@{LayoutXbis}!model.MyController@{model.MyController}}
+\doxysubsubsection{LayoutXbis}
+{\footnotesize\ttfamily final int model.\+My\+Controller.\+Layout\+Xbis = 160\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a6bcd546b4dc7ce5eebad6ca78f10666c}} 
+\index{model.MyController@{model.MyController}!LayoutYEffacer@{LayoutYEffacer}}
+\index{LayoutYEffacer@{LayoutYEffacer}!model.MyController@{model.MyController}}
+\doxysubsubsection{LayoutYEffacer}
+{\footnotesize\ttfamily final int model.\+My\+Controller.\+Layout\+Y\+Effacer = 250\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a9158b0fa6947f1982d9bd459bb5cf4f7}} 
+\index{model.MyController@{model.MyController}!LayoutYGomme@{LayoutYGomme}}
+\index{LayoutYGomme@{LayoutYGomme}!model.MyController@{model.MyController}}
+\doxysubsubsection{LayoutYGomme}
+{\footnotesize\ttfamily final int model.\+My\+Controller.\+Layout\+Y\+Gomme = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a931a2c0197d065e1d5bb705330f7e10b}} 
+\index{model.MyController@{model.MyController}!LayoutYTaille@{LayoutYTaille}}
+\index{LayoutYTaille@{LayoutYTaille}!model.MyController@{model.MyController}}
+\doxysubsubsection{LayoutYTaille}
+{\footnotesize\ttfamily final int model.\+My\+Controller.\+Layout\+Y\+Taille = 400\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_ab8bf1cabff795fce00cc5a6c59473e26}} 
+\index{model.MyController@{model.MyController}!myPrimaryStage@{myPrimaryStage}}
+\index{myPrimaryStage@{myPrimaryStage}!model.MyController@{model.MyController}}
+\doxysubsubsection{myPrimaryStage}
+{\footnotesize\ttfamily Stage model.\+My\+Controller.\+my\+Primary\+Stage\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a21a58ae1ec0e487ce97b931f9260d0cb}} 
+\index{model.MyController@{model.MyController}!saturationStart@{saturationStart}}
+\index{saturationStart@{saturationStart}!model.MyController@{model.MyController}}
+\doxysubsubsection{saturationStart}
+{\footnotesize\ttfamily Slider model.\+My\+Controller.\+saturation\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_aef5a1cfef295e7d48cfbbb7e8232b781}} 
+\index{model.MyController@{model.MyController}!saturationStop@{saturationStop}}
+\index{saturationStop@{saturationStop}!model.MyController@{model.MyController}}
+\doxysubsubsection{saturationStop}
+{\footnotesize\ttfamily Slider model.\+My\+Controller.\+saturation\+Stop\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a92026926091ac3beb5caf8e31116b5da}} 
+\index{model.MyController@{model.MyController}!sensibility@{sensibility}}
+\index{sensibility@{sensibility}!model.MyController@{model.MyController}}
+\doxysubsubsection{sensibility}
+{\footnotesize\ttfamily Slider model.\+My\+Controller.\+sensibility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_ac50a45cd0043aca02ab5620f2d439ebe}} 
+\index{model.MyController@{model.MyController}!startTime@{startTime}}
+\index{startTime@{startTime}!model.MyController@{model.MyController}}
+\doxysubsubsection{startTime}
+{\footnotesize\ttfamily long model.\+My\+Controller.\+start\+Time = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a29ce3c086feee3568ea7101cbbbf91fd}} 
+\index{model.MyController@{model.MyController}!TexteField@{TexteField}}
+\index{TexteField@{TexteField}!model.MyController@{model.MyController}}
+\doxysubsubsection{TexteField}
+{\footnotesize\ttfamily Text\+Field model.\+My\+Controller.\+Texte\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a60cb4c7652e62b19393ed57d8b134461}} 
+\index{model.MyController@{model.MyController}!timer@{timer}}
+\index{timer@{timer}!model.MyController@{model.MyController}}
+\doxysubsubsection{timer}
+{\footnotesize\ttfamily Scheduled\+Executor\+Service model.\+My\+Controller.\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a071bd226d42eb5ca6a0379a9c020f1ee}} 
+\index{model.MyController@{model.MyController}!UIMode@{UIMode}}
+\index{UIMode@{UIMode}!model.MyController@{model.MyController}}
+\doxysubsubsection{UIMode}
+{\footnotesize\ttfamily Button model.\+My\+Controller.\+U\+I\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_aa3704cf0c14b9a6806bed1dab1f8197a}} 
+\index{model.MyController@{model.MyController}!valueStart@{valueStart}}
+\index{valueStart@{valueStart}!model.MyController@{model.MyController}}
+\doxysubsubsection{valueStart}
+{\footnotesize\ttfamily Slider model.\+My\+Controller.\+value\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a786410569fb45a3dde8ad0ca20551a97}} 
+\index{model.MyController@{model.MyController}!valueStop@{valueStop}}
+\index{valueStop@{valueStop}!model.MyController@{model.MyController}}
+\doxysubsubsection{valueStop}
+{\footnotesize\ttfamily Slider model.\+My\+Controller.\+value\+Stop\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classmodel_1_1_my_controller_a06c402fa1e9617cb651ac1d4876de5c4}} 
+\index{model.MyController@{model.MyController}!Width@{Width}}
+\index{Width@{Width}!model.MyController@{model.MyController}}
+\doxysubsubsection{Width}
+{\footnotesize\ttfamily final int model.\+My\+Controller.\+Width = 210\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/\textbf{ My\+Controller.\+java}\end{DoxyCompactItemize}

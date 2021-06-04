@@ -1,0 +1,86 @@
+\doxysection{img\+Proc.\+Utils Class Reference}
+\label{classimg_proc_1_1_utils}\index{imgProc.Utils@{imgProc.Utils}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Image \textbf{ mat2\+Image} (Mat frame)
+\item 
+static$<$ T $>$ void \textbf{ on\+F\+X\+Thread} (final Object\+Property$<$ T $>$ property, final T value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Buffered\+Image \textbf{ mat\+To\+Buffered\+Image} (Mat original)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provide general purpose methods for handling Open\+C\+V-\/\+Java\+FX data conversion. Moreover, expose some \char`\"{}low level\char`\"{} methods for matching few Java\+FX behavior.
+
+\begin{DoxyAuthor}{Author}
+{\texttt{ Luigi De Russis}} 
+
+{\texttt{ Maximilian Zuleger}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 (2016-\/09-\/17) 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+1.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classimg_proc_1_1_utils_a74985a5bbc58bcbe0570be8f8be6f577}} 
+\index{imgProc.Utils@{imgProc.Utils}!mat2Image@{mat2Image}}
+\index{mat2Image@{mat2Image}!imgProc.Utils@{imgProc.Utils}}
+\doxysubsubsection{mat2Image()}
+{\footnotesize\ttfamily static Image img\+Proc.\+Utils.\+mat2\+Image (\begin{DoxyParamCaption}\item[{Mat}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert a Mat object (Open\+CV) in the corresponding Image for Java\+FX
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & the \doxyref{Mat}{p.}{} representing the current frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \doxyref{Image}{p.}{} to show 
+\end{DoxyReturn}
+Convertit un objet Mat de O\+P\+E\+N\+CV en un objet Image de Java\+FX\mbox{\label{classimg_proc_1_1_utils_a5d53fc330df60e193dbfb31caa95200b}} 
+\index{imgProc.Utils@{imgProc.Utils}!matToBufferedImage@{matToBufferedImage}}
+\index{matToBufferedImage@{matToBufferedImage}!imgProc.Utils@{imgProc.Utils}}
+\doxysubsubsection{matToBufferedImage()}
+{\footnotesize\ttfamily static Buffered\+Image img\+Proc.\+Utils.\+mat\+To\+Buffered\+Image (\begin{DoxyParamCaption}\item[{Mat}]{original }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Support for the \doxyref{mat2image()}{p.}{} method
+
+
+\begin{DoxyParams}{Parameters}
+{\em original} & the \doxyref{Mat}{p.}{} object in B\+GR or grayscale \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the corresponding \doxyref{Buffered\+Image}{p.}{} 
+\end{DoxyReturn}
+Convertit un objet Mat de O\+P\+E\+N\+CV en un objet Buffered\+Image de Java\+FX ~\newline
+Les Buffered\+Image sont utilisee pour manipuler les donnees de l\textquotesingle{}image.\mbox{\label{classimg_proc_1_1_utils_aa0c805514eced5d45747a17b24d3f2e5}} 
+\index{imgProc.Utils@{imgProc.Utils}!onFXThread@{onFXThread}}
+\index{onFXThread@{onFXThread}!imgProc.Utils@{imgProc.Utils}}
+\doxysubsubsection{onFXThread()}
+{\footnotesize\ttfamily static $<$T$>$ void img\+Proc.\+Utils.\+on\+F\+X\+Thread (\begin{DoxyParamCaption}\item[{final Object\+Property$<$ T $>$}]{property,  }\item[{final T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generic method for putting element running on a non-\/\+Java\+FX thread on the Java\+FX thread, to properly update the UI
+
+
+\begin{DoxyParams}{Parameters}
+{\em property} & a \doxyref{Object\+Property}{p.}{} \\
+\hline
+{\em value} & the value to set for the given \doxyref{Object\+Property}{p.}{}\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+img\+Proc/\textbf{ Utils.\+java}\end{DoxyCompactItemize}
